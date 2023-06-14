@@ -1,12 +1,20 @@
-<script></script>
+<script setup>
+import Jumbotron from './contents/Jumbotron.vue'
+</script>
 <template>
     <header>
-        <div class="container">
+        <div class="container d-flex flex-column justify-content-between mb-0 h-100">
+
+            <!-- Navbar -->
             <div class="row align-items-center justify-content-between">
+
+                <!-- Name -->
                 <div class="col">
                     <p class="m-0">Serena Dong</p>
                     <p id="location" class="text-secondary m-0">Milan, Italy</p>
                 </div>
+
+                <!-- Functions -->
                 <div class="col">
                     <nav>
                         <ul class="d-flex gap-3 justify-content-center bg-white py-3 rounded-5 m-0">
@@ -17,6 +25,9 @@
                         </ul>
                     </nav>
                 </div>
+
+
+                <!-- Social -->
                 <div class="col social text-end">
                     <p class="text-secondary m-0">Social:</p>
                     <ul class="d-flex gap-3 justify-content-end text-end m-0 ">
@@ -25,10 +36,17 @@
                     </ul>
                 </div>
             </div>
+
+            <!-- Jumbotron -->
+            <Jumbotron></Jumbotron>
         </div>
     </header>
 </template>
 <style lang="scss" scoped>
+header {
+    height: 650px;
+}
+
 header .row {
     min-height: 100px;
 
